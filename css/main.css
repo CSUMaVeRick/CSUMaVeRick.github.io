@@ -11,7 +11,7 @@
   --table-row-odd-bg-color: #f9f9f9;
   --table-row-hover-bg-color: #f5f5f5;
   --menu-item-bg-color: #f5f5f5;
-  --theme-color: #222;
+  --theme-color: linear-gradient(to right, #08448c, #094183, #0b3e7a, #0e3b72, #103869);
   --btn-default-bg: #fff;
   --btn-default-color: #555;
   --btn-default-border-color: #555;
@@ -184,7 +184,7 @@ body {
   background: var(--body-bg-color);
   box-sizing: border-box;
   color: var(--text-color);
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: 'Noto Serif SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 1em;
   line-height: 2;
   min-height: 100%;
@@ -197,7 +197,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: 'Noto Serif SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 30px 0 15px;
@@ -409,7 +409,7 @@ pre figcaption a:hover {
 }
 pre,
 code {
-  font-family: consolas, Menlo, monospace, 'PingFang SC', 'Microsoft YaHei';
+  font-family: consolas, Menlo, monospace, 'Noto Serif SC', 'PingFang SC', 'Microsoft YaHei';
 }
 code {
   border-radius: 3px;
@@ -968,6 +968,7 @@ pre code {
 }
 .custom-logo-image {
   margin-top: 20px;
+  max-width: 60%;
 }
 @media (max-width: 991px) {
   .custom-logo-image {
@@ -984,9 +985,9 @@ pre code {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  font-size: 1.375em;
-  font-weight: normal;
+  font-family: Noto Serif SC, 'Noto Serif SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 1.5em; /* $font-size-title; */
+  font-weight: bold;
   line-height: 1.5;
   margin: 0;
 }
@@ -1076,6 +1077,7 @@ pre code {
 .menu-item .far,
 .menu-item .fas {
   margin-right: 8px;
+  color: #0b3e7a;
 }
 .menu-item .badge {
   display: inline-block;
@@ -1136,6 +1138,7 @@ pre code {
 .links-of-author .far,
 .links-of-author .fas {
   margin-right: 2px;
+  color: #0b3e7a;
 }
 .sidebar .sidebar-button:not(:first-child) {
   margin-top: 15px;
@@ -1329,28 +1332,6 @@ pre code {
   top: -6px;
   transform: rotate(-45deg);
 }
-.site-state {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  line-height: 1.4;
-}
-.site-state-item {
-  padding: 0 15px;
-}
-.site-state-item a {
-  border-bottom: 0;
-  display: block;
-}
-.site-state-item-count {
-  display: block;
-  font-size: 1em;
-  font-weight: 600;
-}
-.site-state-item-name {
-  color: #999;
-  font-size: 0.8125em;
-}
 .footer {
   color: #999;
   font-size: 0.875em;
@@ -1411,6 +1392,12 @@ pre code {
   color: #f00;
   display: inline-block;
   margin: 0 5px;
+}
+.busuanzi-count #busuanzi_container_site_uv {
+  display: none;
+}
+.busuanzi-count #busuanzi_container_site_pv {
+  display: none;
 }
 @keyframes icon-animate {
   0%, 100% {
@@ -1615,7 +1602,7 @@ pre code {
   width: 4px;
 }
 .post-body {
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: 'Noto Serif SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
   overflow-wrap: break-word;
 }
 @media (min-width: 1200px) {
@@ -1802,7 +1789,7 @@ pre code {
 }
 .posts-expand .post-meta-container {
   color: #999;
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: 'Noto Serif SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 0.75em;
   margin-top: 3px;
 }
@@ -1833,6 +1820,9 @@ pre code {
 .post-meta-break {
   flex-basis: 100%;
   height: 0;
+}
+#busuanzi_container_page_pv {
+  display: none;
 }
 .post-nav {
   border-top: 1px solid #eee;
@@ -2135,6 +2125,13 @@ ul.breadcrumb li:last-child {
   border-bottom-color: #111;
   color: #111;
 }
+mjx-container[jax='CHTML'][display='true'],
+.has-jax {
+  overflow: auto hidden;
+}
+mjx-container[display='true'] + br {
+  display: none;
+}
 .use-motion .animated {
   animation-fill-mode: none;
   visibility: inherit;
@@ -2328,7 +2325,6 @@ header.header {
   color: var(--text-color);
   margin-top: 12px;
   max-height: calc(100vh - 24px);
-  visibility: hidden;
 }
 .site-state-item {
   padding: 0 10px;

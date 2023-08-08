@@ -36,7 +36,7 @@
 <meta property="og:image" content="https://maverickxi.top/2023/06/30/%E4%BF%A1%E6%81%AF%E7%86%B5%E8%A7%86%E8%A7%92%E4%B8%8B%E6%95%B0%E5%AD%97%E5%87%BA%E7%89%88%E6%8A%80%E6%9C%AF%E5%88%9B%E6%96%B0%E6%89%A9%E6%95%A3%E7%A0%94%E7%A9%B6[D]/Helium_entropy.png">
 <meta property="og:image" content="https://maverickxi.top/2023/06/30/%E4%BF%A1%E6%81%AF%E7%86%B5%E8%A7%86%E8%A7%92%E4%B8%8B%E6%95%B0%E5%AD%97%E5%87%BA%E7%89%88%E6%8A%80%E6%9C%AF%E5%88%9B%E6%96%B0%E6%89%A9%E6%95%A3%E7%A0%94%E7%A9%B6[D]/weibo_period.png">
 <meta property="article:published_time" content="2023-06-30T08:32:53.163Z">
-<meta property="article:modified_time" content="2023-07-10T12:05:32.654Z">
+<meta property="article:modified_time" content="2023-08-08T11:49:21.859Z">
 <meta property="article:author" content="奚奇">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://maverickxi.top/2023/06/30/%E4%BF%A1%E6%81%AF%E7%86%B5%E8%A7%86%E8%A7%92%E4%B8%8B%E6%95%B0%E5%AD%97%E5%87%BA%E7%89%88%E6%8A%80%E6%9C%AF%E5%88%9B%E6%96%B0%E6%89%A9%E6%95%A3%E7%A0%94%E7%A9%B6[D]/sim_1_k10_n100_w.png">
@@ -207,7 +207,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-07-10 20:05:32" itemprop="dateModified" datetime="2023-07-10T20:05:32+08:00">2023-07-10</time>
+      <time title="修改时间：2023-08-08 19:49:21" itemprop="dateModified" datetime="2023-08-08T19:49:21+08:00">2023-08-08</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -305,13 +305,13 @@ P_{S\to K}(i)=m+w_i\cdot\mathrm{Entropy}\left(\frac{\sigma_S(i)}{k}\right).
 <h2 id="均匀网络的不同参数仿真结果">3.1均匀网络的不同参数仿真结果</h2>
 <p>本小节考虑正则图（regular graph），这是最简单的社会网络。正则图中的所有个体均有相同的度<span class="math inline">\(k\)</span>，所以正则图是规则且均匀的结构。本小节中考虑的参数为<span class="math inline">\(w\in\{0.1,0.2,0.3,0.4\}\)</span>、<span class="math inline">\(n\in\{100,200,500\}\)</span>、<span class="math inline">\(k\in\{2,4,6,8,10\}\)</span>，<span class="math inline">\(m\)</span>固定为0.03，每种参数重复50次。为了便于后文分析，取<span class="math inline">\(w=0.4,n=100,k=10\)</span>为“标准参数”。</p>
 <p>首先控制<span class="math inline">\(w\)</span>，如图1。可以发现不同取值组间具有明显差异，不确定性偏好越强，则创新扩散越快。但是不确定性偏好与扩散中不确定性的关系较为复杂，<span class="math inline">\(w\)</span>越大，则系统信息熵峰值出现越早，但是峰值的强度越低。还可以观察到<span class="math inline">\(w\)</span>越大，则信息熵越早趋于0，说明信息熵的作用时间更为短暂。这可能是由于强不确定性偏好使个体更倾向于了解创新，所以不确定性的变化急剧；而弱不确定性偏好则使系统呈现长期相持的状态，所以不确定性保持了较长时间的高数值。</p>
-<p><img src="/2023/06/30/%E4%BF%A1%E6%81%AF%E7%86%B5%E8%A7%86%E8%A7%92%E4%B8%8B%E6%95%B0%E5%AD%97%E5%87%BA%E7%89%88%E6%8A%80%E6%9C%AF%E5%88%9B%E6%96%B0%E6%89%A9%E6%95%A3%E7%A0%94%E7%A9%B6[D]/sim_1_k10_n100_w.png" alt="sim_1_k10_n100_w" style="zoom:15%;"><img src="/2023/06/30/%E4%BF%A1%E6%81%AF%E7%86%B5%E8%A7%86%E8%A7%92%E4%B8%8B%E6%95%B0%E5%AD%97%E5%87%BA%E7%89%88%E6%8A%80%E6%9C%AF%E5%88%9B%E6%96%B0%E6%89%A9%E6%95%A3%E7%A0%94%E7%A9%B6[D]/sim_1_k10_n100_w_ent.png" alt="sim_1_k10_n100_w_ent" style="zoom:15%;"></p>
+<p><img src="sim_1_k10_n100_w.png" alt="sim_1_k10_n100_w" style="zoom:15%;" /><img src="sim_1_k10_n100_w_ent.png" alt="sim_1_k10_n100_w_ent" style="zoom:15%;" /></p>
 <p>图 1控制<span class="math inline">\(w\)</span>的均匀网络仿真结果</p>
 <p>控制<span class="math inline">\(k\)</span>，如图2。不难看出，个体的社交能力越强，创新扩散就越快，表现为S形曲线的第二个拐点更早到来。与<span class="math inline">\(w\)</span>相似，<span class="math inline">\(k\)</span>越大，则系统的信息熵峰值出现越早。但是在<span class="math inline">\(k\)</span>较小时，信息熵变化的单峰不明显，这是由于局部信息熵取值范围有限，所以在系统层面出现了短时间步内的较大波动。不确定性峰值则是与<span class="math inline">\(k\)</span>有正向关系。</p>
-<p><img src="/2023/06/30/%E4%BF%A1%E6%81%AF%E7%86%B5%E8%A7%86%E8%A7%92%E4%B8%8B%E6%95%B0%E5%AD%97%E5%87%BA%E7%89%88%E6%8A%80%E6%9C%AF%E5%88%9B%E6%96%B0%E6%89%A9%E6%95%A3%E7%A0%94%E7%A9%B6[D]/sim_1_w04_n100_k.png" alt="sim_1_w04_n100_k" style="zoom:15%;"><img src="/2023/06/30/%E4%BF%A1%E6%81%AF%E7%86%B5%E8%A7%86%E8%A7%92%E4%B8%8B%E6%95%B0%E5%AD%97%E5%87%BA%E7%89%88%E6%8A%80%E6%9C%AF%E5%88%9B%E6%96%B0%E6%89%A9%E6%95%A3%E7%A0%94%E7%A9%B6[D]/sim_1_w04_n100_k_ent.png" alt="sim_1_w04_n100_k_ent" style="zoom:15%;"></p>
+<p><img src="sim_1_w04_n100_k.png" alt="sim_1_w04_n100_k" style="zoom:15%;" /><img src="sim_1_w04_n100_k_ent.png" alt="sim_1_w04_n100_k_ent" style="zoom:15%;" /></p>
 <p>图 2控制<span class="math inline">\(k\)</span>的均匀网络仿真结果</p>
 <p>对于网络规模，见图3。可以发现网络规模的增长对于创新扩散的趋势影响并不明显，但对扩散程度有一定影响。网络规模对系统信息熵变化的影响则较为微弱。</p>
-<p><img src="/2023/06/30/%E4%BF%A1%E6%81%AF%E7%86%B5%E8%A7%86%E8%A7%92%E4%B8%8B%E6%95%B0%E5%AD%97%E5%87%BA%E7%89%88%E6%8A%80%E6%9C%AF%E5%88%9B%E6%96%B0%E6%89%A9%E6%95%A3%E7%A0%94%E7%A9%B6[D]/sim_1_k10_w04_n.png" alt="sim_1_k10_w04_n" style="zoom:15%;"><img src="/2023/06/30/%E4%BF%A1%E6%81%AF%E7%86%B5%E8%A7%86%E8%A7%92%E4%B8%8B%E6%95%B0%E5%AD%97%E5%87%BA%E7%89%88%E6%8A%80%E6%9C%AF%E5%88%9B%E6%96%B0%E6%89%A9%E6%95%A3%E7%A0%94%E7%A9%B6[D]/sim_1_k10_w04_n_ent.png" alt="sim_1_k10_w04_n_ent" style="zoom:15%;"></p>
+<p><img src="sim_1_k10_w04_n.png" alt="sim_1_k10_w04_n" style="zoom:15%;" /><img src="sim_1_k10_w04_n_ent.png" alt="sim_1_k10_w04_n_ent" style="zoom:15%;" /></p>
 <p>图 3控制<span class="math inline">\(n\)</span>的均匀网络仿真结果</p>
 <p>总结来看，在均匀理想网络的扩散中，确实存在不确定性的明显变化，且这变化与系统中的扩散有同步性；个体社会关系数量的差异也对知晓率有影响；对于网络规模，虽然知晓率差异不具有显著性，但是信息熵数值存在明显差异。</p>
 <h2 id="非均匀真实网络中的仿真结果">3.2非均匀真实网络中的仿真结果</h2>
@@ -321,7 +321,7 @@ P_{S\to K}(i)=m+w_i\cdot\mathrm{Entropy}\left(\frac{\sigma_S(i)}{k}\right).
 w_k=w\left(1-\frac{C_D(k)}{\max C_D}\right)=w\left(1-\frac{k}{\max D}\right),
 \]</span></p>
 <p>其中，<span class="math inline">\(w\)</span>为社会体系的不确定性偏好，<span class="math inline">\(C_D(k)=\frac{D_k}{n-1}\)</span>为节点的度与网络中的理论最大度之比。对于该网络，由于<span class="math inline">\(\max D_k=1045\)</span>，所以<span class="math inline">\(w_k=w\left(1-\frac{k}{1045}\right)\)</span>。与在均匀网络中仿真类似的，取<span class="math inline">\(m=0.03,w\in\{0.1,0.2,0.3,0.4,0.5\}\)</span>作为仿真参数，每组重复10次。利用Python仿真后结果如图4。</p>
-<p><img src="/2023/06/30/%E4%BF%A1%E6%81%AF%E7%86%B5%E8%A7%86%E8%A7%92%E4%B8%8B%E6%95%B0%E5%AD%97%E5%87%BA%E7%89%88%E6%8A%80%E6%9C%AF%E5%88%9B%E6%96%B0%E6%89%A9%E6%95%A3%E7%A0%94%E7%A9%B6[D]/sim_2_w.png" alt="sim_2_w" style="zoom:15%;"><img src="/2023/06/30/%E4%BF%A1%E6%81%AF%E7%86%B5%E8%A7%86%E8%A7%92%E4%B8%8B%E6%95%B0%E5%AD%97%E5%87%BA%E7%89%88%E6%8A%80%E6%9C%AF%E5%88%9B%E6%96%B0%E6%89%A9%E6%95%A3%E7%A0%94%E7%A9%B6[D]/sim_2_w_ent.png" alt="sim_2_w_ent" style="zoom:15%;"></p>
+<p><img src="sim_2_w.png" alt="sim_2_w" style="zoom:15%;" /><img src="sim_2_w_ent.png" alt="sim_2_w_ent" style="zoom:15%;" /></p>
 <p>图 4控制<span class="math inline">\(w\)</span>的无标度网络仿真结果</p>
 <p>可以发现，<span class="math inline">\(w\)</span>越大，社会体系中创新扩散越快，表现为更为陡峭的曲线以及更早到来的拐点，这一结果与均匀网络相似。还注意到，即使<span class="math inline">\(w\)</span>取到最大值，社会体系中仍然有少量个体没有了解创新，这说明模型允许了落后者的存在。Facebook网络中的信息熵曲线较均匀网络变化更为平滑，且呈现了类似的结论，<span class="math inline">\(w\)</span>越大，信息熵峰值越小，但峰值越早来到，并且同样具有长尾特征，且较均匀网络更为明显。</p>
 <h1 id="模型验证真实技术扩散案例中的规律存在性">4.模型验证：真实技术扩散案例中的规律存在性</h1>
@@ -331,10 +331,10 @@ F_{ij}=\frac{M_iM_j}{D_{ij}^2},
 \]</span></p>
 <p>作为城市间交互强度的度量。选取<span class="math inline">\(M\)</span>为地区的年度GDP，从国家统计年鉴获取；<span class="math inline">\(D\)</span>为高速公里交通距离，可由高德地图api获取。另外，确定本节的分析范围为我国大陆地区的省级行政单位，一共31个地区。由于引力网络是一个<span class="math inline">\(31\times31\)</span>的带权的全连通网络，不便与前文的理论实验结果进行比较。所以，对每个边的起始地<span class="math inline">\(i\)</span>选取其引力<span class="math inline">\(F_{ij}\)</span>最大的10个<span class="math inline">\(j\)</span>与其连边，但不计权重。Helium设备在我国大陆的数据可由相关api获取，本文数据截止于2022年8月7日，共爬虫到约86000个设备信息。这些热点的分布情况可以刻画Helium设备的创新采用过程。为验证模型，不妨将一座城市第一次采用Helium设备视为城市“知晓”了创新。所以就能以城市引力网络分析Helium扩散情况。为了了解Helium创新扩散中的网络媒体作用，笔者从wisesearch数据库中获取了2019年一季度至2022年三季度的微博Helium相关推文数据。</p>
 <p>考虑到不同省份知晓的时间点规模相较于全部的时间点是极微小的，在验算时只对这些时间点的截面计算信息熵。按照上节构建的引力网络及处理得到的知晓时间分布，可以获得信息熵变化分布。求取每一时刻中系统内尚未知晓Helium的省份的信息熵均值，可视化如图5。</p>
-<p><img src="/2023/06/30/%E4%BF%A1%E6%81%AF%E7%86%B5%E8%A7%86%E8%A7%92%E4%B8%8B%E6%95%B0%E5%AD%97%E5%87%BA%E7%89%88%E6%8A%80%E6%9C%AF%E5%88%9B%E6%96%B0%E6%89%A9%E6%95%A3%E7%A0%94%E7%A9%B6[D]/Helium_entropy.png" alt="Helium_entropy" style="zoom:15%;"></p>
+<p><img src="Helium_entropy.png" alt="Helium_entropy" style="zoom:15%;" /></p>
 <p>图 5Helium扩散过程的信息熵变化</p>
 <p>可以发现，Helium设备的扩散中存在着明显的信息熵变化。进一步地，将信息熵及知晓时间窗口叠加在微博推文上，如图6。</p>
-<p><img src="/2023/06/30/%E4%BF%A1%E6%81%AF%E7%86%B5%E8%A7%86%E8%A7%92%E4%B8%8B%E6%95%B0%E5%AD%97%E5%87%BA%E7%89%88%E6%8A%80%E6%9C%AF%E5%88%9B%E6%96%B0%E6%89%A9%E6%95%A3%E7%A0%94%E7%A9%B6[D]/weibo_period.png" alt="weibo_period" style="zoom:15%;"></p>
+<p><img src="weibo_period.png" alt="weibo_period" style="zoom:15%;" /></p>
 <p>图 6社交媒体讨论变化与信息熵变化</p>
 <p>社交媒体对创新的讨论量也出现了信息熵机制。在知晓前的讨论量并不多，这符合罗杰斯指出的创新先驱数量少的论断。熵增期与熵稳定期各出现了一次讨论高峰，这反映了创新先驱及早期采纳者对后继者的影响。熵减期后讨论量达到了全局高峰，并在知晓后维持了两个季度随后下降，这表明创新知晓确实扩大了人际来源的扩散影响力。</p>
 <p>必须指出的是，本节的分析仅能从实证数据中支持信息熵机制的存在，具体的影响路径探究还依赖于模型改进与更多案例的收集。</p>
